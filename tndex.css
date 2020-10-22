@@ -2,6 +2,13 @@ html, body {
     margin: 0;
     padding: 0;
     font-family: 'Kanit', sans-serif;
+    scroll-behavior: smooth;
+    color: #292B2C;
+}
+
+*::selection {
+    color: #FEAD0B;
+    background-color: #292B2C;
 }
 
 .navbar {
@@ -18,7 +25,169 @@ html, body {
     color: #FEAD0B;
 }
 
+header {
+    background: linear-gradient(
+        rgba(255,255,255,0.5),
+        rgba(0,0,0,0.5)
+    ),
+    url(https://images.unsplash.com/photo-1587614313085-5da51cebd8ac?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80)
+    no-repeat center;
+    background-size: cover;
+    height: 80vh;
+    display: flex;
+    align-content: center;
+}
 
+.header__textbox{
+    display: block;
+    max-width: 1200px;
+    margin: 0px auto;
+}
 
+.header__textbox--text-big {
+    text-align: center;
+    font-size: 120px;
+    color: white;
+    animation: header__textbox--text-big
+               1s ease ;
+}
 
+@keyframes header__textbox--text-big {
+    0% {
+        opacity: 0;
+        transform: translate(0px, 80px);
+    }
 
+    100% {
+        opacity: 1;
+        transform: translate(0px, 0px);
+    }
+}
+
+.header__textbox--text-small {
+    text-align: center;
+    font-size: 60px;
+    color: white;
+    animation: header__textbox--text-small
+    1s ease .3s forwards;
+    opacity: 0;
+}
+
+@keyframes header__textbox--text-small {
+    0% {
+        opacity: 0;
+        transform: translate(0px, 80px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0px, 0px);
+    }
+}
+
+.header__btn {
+    border: none;
+    border-radius: 7px;
+    background-color: #FEBB34;
+    padding: 15px;
+    animation: header__textbox--text-small
+    1s ease .3s forwards;
+    opacity: 0;
+    display: block;
+    margin: 30px auto;
+    transition: .3s ease;
+    outline: none;
+}
+
+.header__btn a {
+    font-size: 22px;
+    text-decoration: none;
+    color: #292B2C;
+}
+
+.header__btn a:hover {
+    font-size: 22px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.header__btn:hover {
+    color: #fff;
+    background: transparent;
+    border: 2px solid #FEBB34;
+}
+
+.health {
+    background-color: #F5F5F5;
+    display: flex;
+    justify-content: center;
+    height: auto;
+    padding: 60px 0;
+}
+
+.health__head {
+    background-color: #F5F5F5;
+    font-size: 30px;
+    margin: 0;
+    padding: 40px 0 0 0;
+    text-align: center;
+    font-weight: 700;
+}
+
+.health__result {
+    text-align: center;
+    width: auto;
+    margin: auto 50px;
+    align-self: center;
+}
+
+.health__result-number {
+    font-size: 40px;
+    font-weight: 700;
+    color: #FEBB34;
+}
+
+.health__result-text, 
+.health__calculate-text {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.health__calculate {
+    text-align: center;
+    margin: auto 50px;
+    width: auto;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+}
+
+.health__calculate input {
+    display: inline;
+    margin: 10px auto ;
+    text-align: center;
+    border: 2px solid #FEAD0B;
+    border-radius: 4px;
+    padding: 0px;
+    width: 100px;
+}
+
+.health__calculate-data input:first-child{
+    margin-top: 10px;
+}
+
+.health__calculate input[type="radio"] {
+    margin: 5px 2px 5px 20px ;
+    display: inline-block;
+    width: auto;
+
+}
+
+.health__calculate-sex{
+    display: flex;
+    justify-content: center;
+}
+
+.health__calculate-data label {
+    width: 50px;
+}

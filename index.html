@@ -22,17 +22,16 @@
                 aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="#"> Health <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Features</a>
+                        <a class="nav-link" href="#"> Convertor </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Pricing</a>
+                        <a class="nav-link" href="#"> Educate </a>
                     </li>
                     </li>
                 </ul>
@@ -41,10 +40,64 @@
     </nav>
 
     <header>
-        
+        <div class="header__textbox">
+            <p class="header__textbox--text-big">
+                JavaScript Project
+            </p>
+            <p class="header__textbox--text-small">
+                for certification
+            </p>
+            <button class="header__btn">
+                <a href="health-box"> See My Project </a>
+            </button>
+        </div>
     </header>
 
+    <main>
+        <p class="health__head">
+            How many calories should you eat per day ?
+        </p>
+        <section class="health">
+            <div class="health__result" id="health-box">
+                <p class="health__result-text"> Your recommended <br> calorie intake is </p>
+                <p class="health__result-number"> 0 </p>
+                <p class="health__result-text"> per day </p>
+            </div>
+            <div class="health__calculate">
+                <p class="health__calculate-text"> Input your data here </p>
+                <div class="health__calculate-sex">
+                    <div>
+                        <input type="radio" id="male" name="gender" value="male">
+                        <label for="male">Male</label><br>
+                    </div>
+                    <div>
+                        <input type="radio" id=" Female" name="gender" value=" Female">
+                        <label for="male"> Female</label><br>
+                    </div>
+                </div>
+                <div class="health__calculate-data">
+                    <div>
+                        <label for="weight"> weight </label>
+                        <input type="text" id="weight" placeholder="kg.">
+        
+                    </div>
+                    <div>
+                        <label for="height"> height </label>
+                        <input type="text" id="height" placeholder="cm.">
+            
+                    </div>
+                    <div>
+                        <label for="age"> age </label>
+                        <input type="text" id="age" placeholder="year">
+                    
+                    </div>
+                </div>
+            </div>
+        </section>
 
+        <section></section>
+        <section></section>
+    </main>
 
     <script src="./index.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
