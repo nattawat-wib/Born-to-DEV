@@ -1,0 +1,25 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Kanit', sans-serif;
+}
+
+.navbar {
+    background-color: #292B2C;
+
+}
+
+.navbar a {
+    color: #F5F5F5;
+    transition: .3s ease;
+}
+
+.navbar a:hover {
+    color: #FEAD0B;
+}
+
+.collapse {
+    float:;
+}
+
+
