@@ -4,6 +4,7 @@ html, body {
     font-family: 'Kanit', sans-serif;
     scroll-behavior: smooth;
     color: #292B2C;
+    background-color:  #F5F5F5;
 }
 
 *::selection {
@@ -118,18 +119,16 @@ header {
 }
 
 .health {
-    background-color: #F5F5F5;
     display: flex;
     justify-content: center;
     height: auto;
-    padding: 60px 0;
+    padding: 20px 0;
 }
 
 .health__head {
-    background-color: #F5F5F5;
     font-size: 30px;
     margin: 0;
-    padding: 40px 0 0 0;
+    padding: 40px 0 20px 0;
     text-align: center;
     font-weight: 700;
 }
@@ -190,4 +189,35 @@ header {
 
 .health__calculate-data label {
     width: 50px;
+}
+
+main {
+    display: flex;
+    flex-flow: row;
+}
+
+.health__calculate-data button {
+    padding: 0px;
+    font-size: 16px;
+    display: block;
+    margin: 20px 0 0 10px;
+    border-radius: 7px;
+    background-color: transparent ;
+    border: 1px solid #292B2C;
+    width: 200px;
+    transition: .3s;
+}
+
+.health__calculate-data button:hover{
+    background-color:  #292B2C;
+}
+
+.health__calculate-data button a{
+    font-size: 16px;
+    color: #292B2C;
+}
+
+.health__calculate-data button:hover a{
+    text-decoration: none;
+    color: #FEAD0B;
 }
