@@ -128,7 +128,7 @@ header {
 .health__head {
     font-size: 30px;
     margin: 0;
-    padding: 40px 0 20px 0;
+    padding: 40px 0 10px 0;
     text-align: center;
     font-weight: 700;
 }
@@ -221,3 +221,28 @@ main {
     text-decoration: none;
     color: #FEAD0B;
 }
+
+.math-section {
+    background-color: #FEDD9A;
+    height: 400px;
+}
+
+
+
+footer {
+    background-color:#292B2C ;
+    padding: 15px 20px;
+}
+
+.footer {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+}
+
+footer p {
+    margin: 0;
+    font-size: 17px;
+    color:  #FEAD0B;
+}
+

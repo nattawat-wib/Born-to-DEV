@@ -41,6 +41,9 @@
 
     <header>
         <div class="header__textbox">
+            <br>
+            <br>
+            <br>
             <p class="header__textbox--text-big">
                 JavaScript Project
             </p>
@@ -54,50 +57,68 @@
     </header>
 
     <main>
+        <p class="health__head" id="health-box">
+            How many calories should you eat per day ?
+        </p>
+        <hr style="width: 750px; background-color:#">
+        <section class="health">
+            <div class="health__result">
+                <p class="health__result-text"> Your recommended <br> calorie intake is </p>
+                <p class="health__result-number"> 0 </p>
+                <p class="health__result-text"> per day </p>
+            </div>
+            <div class="health__calculate">
+                <p class="health__calculate-text"> Input your data here </p>
+                <div class="health__calculate-sex">
+                    <div>
+                        <input type="radio" id="male" name="gender" value="male">
+                        <label for="male">Male</label><br>
+                    </div>
+                    <div>
+                        <input type="radio" id=" Female" name="gender" value=" Female">
+                        <label for="male"> Female</label><br>
+                    </div>
+                </div>
+                <div class="health__calculate-data">
+                    <div>
+                        <label for="weight"> Weight </label>
+                        <input type="text" id="weight" placeholder="kg.">
+                    </div>
+                    <div>
+                        <label for="height"> Height </label>
+                        <input type="text" id="height" placeholder="cm.">
+                    </div>
+                    <div>
+                        <label for="age"> Age </label>
+                        <input type="text" id="age" placeholder="year">
+                    </div>
+                    <button>
+                        <a href="#"> Calculate </a>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+<br>
+<br>
+<br>
+<br>
+
+        <section class="math-section">
             <p class="health__head" id="health-box">
-                How many calories should you eat per day ?
+                Metric convertor
             </p>
             <hr style="width: 750px; background-color:#">
-            <section class="health">
-                <div class="health__result">
-                    <p class="health__result-text"> Your recommended <br> calorie intake is </p>
-                    <p class="health__result-number"> 0 </p>
-                    <p class="health__result-text"> per day </p>
-                </div>
-                <div class="health__calculate">
-                    <p class="health__calculate-text"> Input your data here </p>
-                    <div class="health__calculate-sex">
-                        <div>
-                            <input type="radio" id="male" name="gender" value="male">
-                            <label for="male">Male</label><br>
-                        </div>
-                        <div>
-                            <input type="radio" id=" Female" name="gender" value=" Female">
-                            <label for="male"> Female</label><br>
-                        </div>
-                    </div>
-                    <div class="health__calculate-data">
-                        <div>
-                            <label for="weight"> Weight </label>
-                            <input type="text" id="weight" placeholder="kg.">
-                        </div>
-                        <div>
-                            <label for="height"> Height </label>
-                            <input type="text" id="height" placeholder="cm.">
-                        </div>
-                        <div>
-                            <label for="age"> Age </label>
-                            <input type="text" id="age" placeholder="year">
-                        </div>
-                        <button>
-                            <a href="#"> Calculate </a>
-                        </button>
-                    </div>
-                </div>
-            </section>
+        </section>
 
-            
     </main>
+
+    <footer>
+        <div class="footer container">
+            <p> © 2020 all rights reserved </p>
+            <p> BKK, Thailand </p>
+        </div>
+    </footer>
 
     <script src="./index.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
