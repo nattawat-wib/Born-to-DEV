@@ -163,36 +163,36 @@
                 <div>
                     <div>
                         <label for="Math"> Math </label>
-                        <input type="text" id="Math">
+                        <input type="number" id="Math">
                     </div>
                     <div>
                         <label for="Thai"> Thai </label>
-                        <input type="text" id="Thai">
+                        <input type="number" id="Thai">
                     </div>
                     <div>
                         <label for="English"> English </label>
-                        <input type="text" id="English">
+                        <input type="number" id="English">
                     </div>
                 </div>
 
                 <div>
                     <div>
                         <label for="History "> History </label>
-                        <input type="text" id="History ">
+                        <input type="number" id="History ">
                     </div>
                     <div>
                         <label for="Sociology "> Sociology </label>
-                        <input type="text" id="Sociology ">
+                        <input type="number" id="Sociology ">
                     </div>
                     <div>
                         <label for="Health "> Health </label>
-                        <input type="text" id="Health ">
+                        <input type="number" id="Health ">
                     </div>
                 </div>
             </div>
 
             <div class="gpa__button--group">
-                <button class="gpa__button">
+                <button class="gpa__button" onclick="gpaDisplay()" >
                     Calculate
                 </button>
                 <button class="gpa__button">
@@ -200,9 +200,9 @@
                 </button>
             </div>
 
-            <p class="gpa__result" id="#">
+            <p class="gpa__result">
                 Your GPA is
-                <span class="gpa__result--number">
+                <span class="gpa__result--number" id="e__result">
                     0
                 </span>
             </p>

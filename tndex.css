@@ -218,7 +218,7 @@ main {
     color: #292B2C;
 }
 
-.health__calculate-data button:hover a{
+.health__calculate-data button:hover {
     text-decoration: none;
     color: #FEAD0B;
 }
@@ -389,4 +389,17 @@ footer p {
 ิีbutton {
     outline: none;
     border: none;
+}
+
+input[type='radio']:checked:after {
+    width: 16px;
+    height: 16px;
+    border-radius: 15px;
+    top: -3px;
+    left: -1px;
+    position: relative;
+    background-color: #FEAD0B;
+    content: '';
+    display: inline-block;
+    border: #000 solid 1px;
 }
