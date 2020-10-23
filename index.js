@@ -36,3 +36,14 @@ function gpaCal() {
 
 gpaDisplay = () =>
     document.getElementById('e__result').innerText = gpaCal();
+
+function gpaReset () {
+    document.getElementById('e__result').innerText = 0;
+
+    document.getElementById('js-math').value = null;
+    document.getElementById('js-thai').value = null;
+    document.getElementById('js-english').value = null;
+    document.getElementById('js-history').value = null;
+    document.getElementById('js-sociology').value = null;
+    document.getElementById('js-health').value = null;
+}
