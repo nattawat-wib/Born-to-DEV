@@ -35,15 +35,15 @@ header {
     url(https://images.unsplash.com/photo-1587614313085-5da51cebd8ac?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80)
     no-repeat center;
     background-size: cover;
-    height: 95vh;
+    height: 100vh;
     display: grid;
     align-content: center;
 }
 
 .header__textbox{
-    display: block;
+    align-content: center;
     max-width: 1200px;
-    margin: 0px auto;
+    margin: 0 auto;
 }
 
 .header__textbox--text-big {
