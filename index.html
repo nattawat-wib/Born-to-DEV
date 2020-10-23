@@ -59,15 +59,19 @@
         </div>
     </header>
 
+   
+    <br id="health-box">
+    <br>
+   
     <main>
-        <p class="health__head" id="health-box">
+        <p class="health__head" >
             How many calories should you eat per day ?
         </p>
-        <hr style="width: 750px; background-color:#">
+        <hr style="width: 750px;">
         <section class="health container">
             <div class="health__result">
                 <p class="health__result-text"> Your recommended <br> calorie intake is </p>
-                <p class="health__result-number"> 0 </p>
+                <p class="health__result-number" id="h__result"> 0 </p>
                 <p class="health__result-text"> per day </p>
             </div>
             <div class="health__calculate">
@@ -82,32 +86,32 @@
                         <label for="male"> Female</label><br>
                     </div>
                 </div>
-                <div class="health__calculate-data">
+                <div class="health__calculate-data" id="health__calculate-data">
                     <div>
                         <label for="weight"> Weight </label>
-                        <input type="text" id="weight" placeholder="kg.">
+                        <input type="number" id="weight" placeholder="kg.">
                     </div>
                     <div>
                         <label for="height"> Height </label>
-                        <input type="text" id="height" placeholder="cm.">
+                        <input type="number" id="height" placeholder="cm.">
                     </div>
                     <div>
                         <label for="age"> Age </label>
-                        <input type="text" id="age" placeholder="year">
+                        <input type="number" id="age" placeholder="year">
                     </div>
-                    <button>
-                        <a href=""> Calculate </a>
+                    <button id="healthBtn" onclick="myFunction()">
+                        Calculate
                     </button>
                 </div>
             </div>
         </section>
 
-        <br>
+        <br id="loan-box">
         <br>
         <br>
         <br>
 
-        <section class="loan-section" id="loan-box">
+        <section class="loan-section" >
             <p class="health__head" id="health-box">
                 Loan Calculator
             </p>
