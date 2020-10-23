@@ -20,6 +20,7 @@ html, body {
 .navbar a {
     color: #F5F5F5;
     transition: .3s ease;
+    margin-right: 15px ;
 }
 
 .navbar a:hover {
@@ -222,28 +223,81 @@ main {
     color: #FEAD0B;
 }
 
-.math-section {
+.loan-section {
     background-color: #FEDD9A;
-    height: 400px;
+    height: auto;
 }
 
-
-
-footer {
-    background-color:#292B2C ;
-    padding: 15px 20px;
-}
-
-.footer {
+.loan__cal-box {
     display: flex;
-    flex-flow: row;
-    justify-content: space-between;
+    justify-content: center;
+    height: auto;
+    padding: 20px 0;
 }
 
-footer p {
-    margin: 0;
-    font-size: 17px;
-    color:  #FEAD0B;
+.loan__cal-box input {
+    display: block;
+    margin: 0 auto 20px auto ;
+    text-align: center;
+    border: 2px solid #FEAD0B;
+    border-radius: 4px;
+    padding: 5px;
+    width: 200px;
+
+}
+
+.loan__calculate label {
+    width: 200px;
+    display: block;
+    margin: auto ;
+    text-align: center;
+}
+
+.loan__calculate-data {
+    margin: auto 40px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+}
+
+.loan__result {
+    margin: auto 40px;
+}
+
+.loan__result-text {
+    font-size: 16px;
+    color: #7e7e7ebb;
+}
+
+.loan__result-text-2{
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    color: #292B2C;
+}
+
+.loan__result-number {
+    text-align: center;
+    color: #292B2C;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.loan__button {
+    padding: 5px;
+    font-size: 16px;
+    display: inline;
+    margin: 45px 13px;
+    border-radius: 7px;
+    background-color: transparent ;
+    border: 1px solid #292B2C;
+    width: 170px;
+    transition: .3s;
+}
+
+.loan__button:hover {
+    background-color:#292B2C ;
+    color: #FEAD0B;
 }
 
 .gpa {
@@ -301,4 +355,38 @@ footer p {
     font-weight: bold;
     color: #FEAD0B;
     margin-left: 10px ;
+}
+
+footer {
+    background-color:#292B2C ;
+    padding: 15px 20px;
+}
+
+.footer {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+}
+
+footer p {
+    margin: 0;
+    font-size: 17px;
+    color:  #FEAD0B;
+}
+
+ิีbutton:focus {
+    outline: none;
+    border: none;
+    background-color: #fff;
+}
+
+ิีbutton:active {
+    outline: none;
+    border: none;
+ background-color: #fff;
+}
+
+ิีbutton {
+    outline: none;
+    border: none;
 }
