@@ -7,21 +7,14 @@ function healthCalculators() {
 }
 
 
-function checkLoan(aa) {
-    if (aa == 1) { 
-        alert('dd')
-
-    }
-};
-
 function loanCal() {
     let amount = document.getElementById('js-amount').value;
     let termYears = document.getElementById('js-termYears').value;
     let interestRate = document.getElementById('js-InterestRate').value;
 
-    checkLoan(amount, termYears, interestRate);
+    // return (`${amount} + ${termYears} + ${interestRate}`);
 
-    let result = ((amount * (interestRate/100) * 31) / termYears * 365);
+    let result = ((((amount * interestRate)/100) * 31) / (termYears * 366));
 
     return result = result.toFixed(2);
 };
