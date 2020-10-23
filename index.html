@@ -70,20 +70,23 @@
         <hr style="width: 750px;">
         <section class="health container">
             <div class="health__result">
-                <p class="health__result-text"> Your recommended <br> calorie intake is </p>
+                <p class="health__result-text"> Your calories burned <br>
+                    BMR (Basal Metabolic Rate) </p>
                 <p class="health__result-number" id="h__result"> 0 </p>
                 <p class="health__result-text"> per day </p>
+
+                <p class="loan__result-text" style="text-align: center;"> * Can't input negative number * </p><br>
             </div>
             <div class="health__calculate">
                 <p class="health__calculate-text"> Input your data here </p>
                 <div class="health__calculate-sex">
                     <div>
                         <input type="radio" id="male" name="gender" value="male">
-                        <label for="male">Male</label><br>
+                        <label for="male"> Male </label><br>
                     </div>
                     <div>
                         <input type="radio" id=" Female" name="gender" value=" Female">
-                        <label for="male"> Female</label><br>
+                        <label for="Female"> Female </label><br>
                     </div>
                 </div>
                 <div class="health__calculate-data" id="health__calculate-data">
@@ -99,7 +102,7 @@
                         <label for="age"> Age </label>
                         <input type="number" id="age" placeholder="year">
                     </div>
-                    <button id="healthBtn" onclick="healthCalculators()">
+                    <button id="healthBtn" onclick="healthDisplay()">
                         Calculate
                     </button>
                 </div>
@@ -158,46 +161,50 @@
             </p>
             <hr style="width: 750px; background-color:#">
 
-                <div class="gpa container">
-                    <div>
-                        <div>
-                            <label for="js-math"> Math </label>
-                            <input type="number" id="js-math">
-                        </div>
-                        <div>
-                            <label for="js-thai"> Thai </label>
-                            <input type="number" id="js-thai">
-                        </div>
-                        <div>
-                            <label for="js-english"> English </label>
-                            <input type="number" id="js-english">
-                        </div>
-                    </div>
+            <br>
+            <p class="loan__result-text" style="text-align: center;"> * you can input only 0, 0.5, 1, 1.5, 2, 2.5, 3,
+                3.5 and 4 * </p>
 
+            <div class="gpa container">
+                <div>
                     <div>
-                        <div>
-                            <label for="js-history "> History </label>
-                            <input type="number" id="js-history">
-                        </div>
-                        <div>
-                            <label for="js-sociology "> Sociology </label>
-                            <input type="number" id="js-sociology">
-                        </div>
-                        <div>
-                            <label for="js-health "> Health </label>
-                            <input type="number" id="js-health">
-                        </div>
+                        <label for="js-math"> Math </label>
+                        <input type="number" id="js-math">
+                    </div>
+                    <div>
+                        <label for="js-thai"> Thai </label>
+                        <input type="number" id="js-thai">
+                    </div>
+                    <div>
+                        <label for="js-english"> English </label>
+                        <input type="number" id="js-english">
                     </div>
                 </div>
 
-                <div class="gpa__button--group">
-                    <button class="gpa__button" onclick="gpaDisplay()">
-                        Calculate
-                    </button>
-                    <button class="gpa__button" onclick="gpaReset()">
-                        Clear
-                    </button>
+                <div>
+                    <div>
+                        <label for="js-history "> History </label>
+                        <input type="number" id="js-history">
+                    </div>
+                    <div>
+                        <label for="js-sociology "> Sociology </label>
+                        <input type="number" id="js-sociology">
+                    </div>
+                    <div>
+                        <label for="js-health "> Health </label>
+                        <input type="number" id="js-health">
+                    </div>
                 </div>
+            </div>
+
+            <div class="gpa__button--group">
+                <button class="gpa__button" onclick="gpaDisplay()">
+                    Calculate
+                </button>
+                <button class="gpa__button" onclick="gpaReset()">
+                    Clear
+                </button>
+            </div>
 
             <p class="gpa__result">
                 Your GPA is
@@ -206,7 +213,6 @@
                 </span>
             </p>
 
-            <p class="loan__result-text" style="text-align: center;"> *** you can input only 0, 0.5, 1, 1.5, 2, 2.5, 3, 3.5 and 4 *** </p><br>
 
         </section>
     </main>

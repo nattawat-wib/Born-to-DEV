@@ -1,9 +1,21 @@
 
-function healthCalculators() {
+function healthCal() {
     let weight = +document.getElementById('weight').value;
     let height = +document.getElementById('height').value;
     let age = +document.getElementById('age').value;
-    document.getElementById("h__result").innerHTML = weight + height + age;
+    let result = 0;
+    
+    if (document.getElementById('male').checked) {
+            result = 66 + (13.7 * weight) + (5 * height) - (6.8 * age);
+    } else {
+            result = 665 + (9.6 * weight) + (1.8 * height) - (4.7 * age);
+    }
+
+    return result.toFixed(2);
+}
+
+function healthDisplay () {
+    document.getElementById("h__result").innerHTML = healthCal();
 }
 
 function loanCal() {
@@ -37,7 +49,7 @@ function gpaCal() {
 gpaDisplay = () =>
     document.getElementById('e__result').innerText = gpaCal();
 
-function gpaReset () {
+function gpaReset() {
     document.getElementById('e__result').innerText = 0;
 
     document.getElementById('js-math').value = null;
