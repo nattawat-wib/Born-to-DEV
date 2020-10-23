@@ -13,30 +13,26 @@ function loanCal() {
 
     // return (`${amount} + ${termYears} + ${interestRate}`);
 
-    let result = ((((amount * interestRate)/100) * 31) / (termYears * 366));
-
+    let result = ((((amount * interestRate) / 100) * 31) / (termYears * 366));
     return result = result.toFixed(2);
 };
 
-loanDisplay = () => 
-document.getElementById('l__result').innerText = loanCal();
-
+loanDisplay = () =>
+    document.getElementById('l__result').innerText = loanCal();
 
 //! GPA 
 
 function gpaCal() {
-    let math = document.getElementById('Math').value;
-    let thai = document.getElementById('Thai').value;
-    let english = document.getElementById('English').value;
-    let history = document.getElementById('History').value;
-    let sociology = document.getElementById('Sociology').value;
-    let health = document.getElementById('Health').value;
+    let math = +document.getElementById('js-math').value;
+    let thai = +document.getElementById('js-thai').value;
+    let english = +document.getElementById('js-english').value;
+    let history = +document.getElementById('js-history').value;
+    let sociology = +document.getElementById('js-sociology').value;
+    let health = +document.getElementById('js-health').value;
 
-    return math ;
-
-    // let result = (math + thai + english + history + sociology + health) / 6;
-    // return result;
+    let result = ((math + thai + english + history + sociology + health) / 6);
+    return result = result.toFixed(2);
 }
 
-gpaDisplay = () => 
-document.getElementById('e__result').innerText = document.getElementById('Math').value;;
+gpaDisplay = () =>
+    document.getElementById('e__result').innerText = gpaCal();
