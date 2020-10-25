@@ -47,6 +47,7 @@ header {
 }
 
 .header__textbox--text-big {
+    padding-top: 250px;
     text-align: center;
     font-size: 120px;
     color: white;
