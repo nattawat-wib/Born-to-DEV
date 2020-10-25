@@ -92,15 +92,15 @@
                 <div class="health__calculate-data" id="health__calculate-data">
                     <div>
                         <label for="weight"> Weight </label>
-                        <input type="number" id="weight" placeholder="kg.">
+                        <input type="number" id="weight" min="0" placeholder="kg.">
                     </div>
                     <div>
                         <label for="height"> Height </label>
-                        <input type="number" id="height" placeholder="cm.">
+                        <input type="number" id="height" min="0" placeholder="cm.">
                     </div>
                     <div>
                         <label for="age"> Age </label>
-                        <input type="number" id="age" placeholder="year">
+                        <input type="number" id="age" min="0" placeholder="year">
                     </div>
                     <button id="healthBtn" onclick="healthDisplay()">
                         Calculate
@@ -108,6 +108,11 @@
                 </div>
             </div>
         </section>
+
+        <div class="container">
+            <div id="h__alert" style="display:none; text-align: center;" class="alert alert-danger" role="alert">
+            </div>
+        </div>
 
         <br id="loan-box">
         <br>
@@ -126,15 +131,15 @@
                     <div class="loan__calculate-data">
                         <div>
                             <label for="Loan amount"> Loan amount </label>
-                            <input type="number" id="js-amount" step="10000" min="10000" max="10000000" placeholder=" 10,000 - 10,000,000 ">
+                            <input type="number" id="js-amount" step="10000" min="10000" max="10000000" placeholder="10,000 - 10,000,000">
                         </div>
                         <div>
                             <label for="Loan term in years"> Loan term in years </label>
-                            <input type="number" id="js-termYears" min="1" max="40" placeholder=" 1 year - 40 years">
+                            <input type="number" id="js-termYears" min="1" max="40" placeholder="1 year - 40 years">
                         </div>
                         <div>
                             <label for="Interest rate per year"> Interest rate per year </label>
-                            <input type="number" id="js-InterestRate" min="3" max="20" step="1" placeholder=" 3% - 20%">
+                            <input type="number" id="js-InterestRate" min="3" max="20" step="1" placeholder="3% - 20%">
                         </div>
                         <button class="loan__button" id="loan_cal" onclick="loanDisplay();">
                             Calculate </a>
@@ -143,9 +148,9 @@
                 </div>
 
                 <div class="loan__result">
-                    <p class="loan__result-text"> * Loan amount <br> minimum is 10,000 maximun is 10 million</p> <br>
-                    <p class="loan__result-text"> ** Loan term <br> minimum is 1 year maximum is 40 years </p><br>
-                    <p class="loan__result-text"> *** Interest rate <br> minimum is 3% maximum is 20% </p><br>
+                    <p class="loan__result-text"> * Loan amount <br> minimum is 10,000 maximum is 10 million</p> <br>
+                    <p class="loan__result-text"> ** Loan term in years <br> minimum is 1 year maximum is 40 years </p><br>
+                    <p class="loan__result-text"> *** Interest rate per year <br> minimum is 3% maximum is 20% </p><br>
 
                     <p class="loan__result-text-2"> Monthly Payments </p>
                     <p class="loan__result-number" id="l__result"> 0 </p>
