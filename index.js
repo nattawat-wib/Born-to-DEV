@@ -1,4 +1,3 @@
-
 function healthCal() {
     let weight = +document.getElementById('weight').value;
     let height = +document.getElementById('height').value;

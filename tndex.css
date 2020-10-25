@@ -47,7 +47,7 @@ header {
 }
 
 .header__textbox--text-big {
-    padding-top: 250px;
+    padding-top: 25%;
     text-align: center;
     font-size: 120px;
     color: white;
@@ -125,6 +125,7 @@ header {
     justify-content: center;
     height: auto;
     padding: 20px 0;
+    flex-flow: row wrap-reverse;
 }
 
 .health__head {
@@ -234,6 +235,7 @@ main {
     justify-content: center;
     height: auto;
     padding: 20px 0;
+    flex-flow: row wrap;
 }
 
 .loan__cal-box input {
@@ -365,7 +367,7 @@ footer {
 
 .footer {
     display: flex;
-    flex-flow: row;
+    flex-flow: row wrap;
     justify-content: space-between;
 }
 
@@ -403,4 +405,78 @@ input[type='radio']:checked:after {
     content: '';
     display: inline-block;
     border: #000 solid 1px;
+}
+
+@media (max-width : 1200px) {
+    .health__calculate {
+        text-align: center;
+        margin: auto 20px;
+    }
+
+    
+.health__result {
+    text-align: center;
+    width: auto;
+    margin: auto 20px;
+    align-self: center;
+}
+}
+
+@media (max-width: 768px) {
+
+    header {
+        height: 75vh;
+    }
+
+    .header__textbox--text-big {
+        padding-top: 25% 20px;
+        font-size: 60px;
+    }
+
+    .header__textbox--text-small {
+        font-size: 30px;
+        padding: 10px 20px;
+    }
+
+    .header__btn a {
+        font-size: 15px;
+        text-decoration: none;
+        color: #292B2C;
+    }
+
+    hr {
+        max-width: 75% ;
+    }
+
+    .health__head {
+        font-size: 20px;
+        padding: 40px 20px 10px 20px;
+    }
+
+    .health__result {
+        width: auto;
+        margin: 40px 70px 0 70px;
+    }
+
+    .loan__result-text {
+        padding: 0 20px;
+    }
+
+    .loan__button {
+        margin: 5px 13px 20px 13px;
+    }
+
+    .gpa {
+        display: flex;
+        align-content: center;
+        margin: 20px ;
+        flex-flow: column wrap;
+    }
+
+    .footer {
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+    }
+    
 }
