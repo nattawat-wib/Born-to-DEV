@@ -478,5 +478,29 @@ input[type='radio']:checked:after {
         flex-flow: column wrap;
         align-items: center;
     }
-    
+}
+
+@media (max-width: 586px) {
+
+    .header__textbox--text-big {
+        padding-top: 25% 20px;
+        font-size: 42px;
+    }
+
+    .header__textbox--text-small {
+        font-size: 25px;
+        padding: 10px 20px;
+    }
+
+    .header__btn a {
+        font-size: 17px;
+        margin: 0;
+        padding: 15;
+    }
+
+    .header__btn a:hover {
+        font-size: 17px;
+        margin: 0;
+        padding: 15;
+    }
 }
