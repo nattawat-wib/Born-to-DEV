@@ -43,7 +43,12 @@ function gpaCal() {
     let answerArr = [math, thai, english, history, sociology, health];
 
     answerArr.forEach(function(answer) {
-        if (answer < 0) {
+        if (answer.length == 1) {
+            document.getElementById('e__alert').style.display = 'block';  
+            document.getElementById('e__alert').innerText = "asdasd";  
+            return result;
+
+        } else if (answer < 0) {
             document.getElementById('e__alert').style.display = 'block';  
             document.getElementById('e__alert').innerText = "Can't input negative number";  
             return result;
