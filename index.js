@@ -18,20 +18,46 @@ function healthDisplay() {
     document.getElementById("h__result").innerHTML = healthCal();
 }
 
+//!loan
 function loanCal() {
     let amount = document.getElementById('js-amount').value;
     let termYears = document.getElementById('js-termYears').value;
     let interestRate = document.getElementById('js-InterestRate').value;
 
-    let result = ((((amount * interestRate) / 100) * 31) / (termYears * 366));
-    return result = result.toFixed(2);
+    if (amount === String &&
+        termYears === String &&
+        interestRate === String) {
+            document.getElementById('l__alert').style.display = 'block';
+            document.getElementById('l__alert').innerText = '10,000 maximum is 10 million';
+            return result
+
+    } else if (amount < 10000 || amount > 10000000) {
+        document.getElementById('l__alert').style.display = 'block';
+        document.getElementById('l__alert').innerText = 'Loan amount : minimum is 10,000 maximum is 10 million';
+        return result
+
+    } else if (termYears < 1 || termYears > 40) {
+        document.getElementById('l__alert').style.display = 'block';
+        document.getElementById('l__alert').innerText = 'Loan term : minimum is 1 year maximum is 40 years';  
+        return result
+
+    } else if (interestRate < 3 || interestRate > 20) {
+        document.getElementById('l__alert').style.display = 'block';
+        document.getElementById('l__alert').innerText = 'Interest rate : minimum is 3% maximum is 20%';  
+        return result
+
+    } else {
+        document.getElementById('l__alert').style.display = 'none'
+
+        let result = ((((amount * interestRate) / 100) * 31) / (termYears * 366));
+        return result = result.toFixed(2);
+    }
 };
 
 loanDisplay = () =>
     document.getElementById('l__result').innerText = loanCal();
 
 //! GPA 
-
 function gpaCal() {
     let math = +document.getElementById('js-math').value;
     let thai = +document.getElementById('js-thai').value;
@@ -43,12 +69,7 @@ function gpaCal() {
     let answerArr = [math, thai, english, history, sociology, health];
 
     answerArr.forEach(function(answer) {
-        if (answer.length == 1) {
-            document.getElementById('e__alert').style.display = 'block';  
-            document.getElementById('e__alert').innerText = "asdasd";  
-            return result;
-
-        } else if (answer < 0) {
+        if (answer < 0) {
             document.getElementById('e__alert').style.display = 'block';  
             document.getElementById('e__alert').innerText = "Can't input negative number";  
             return result;
