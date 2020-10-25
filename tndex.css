@@ -228,6 +228,8 @@ main {
 .loan-section {
     background-color: #FEDD9A;
     height: auto;
+    margin-top: 50px;
+    padding-top: 50px;
 }
 
 .loan__cal-box {
@@ -413,13 +415,12 @@ input[type='radio']:checked:after {
         margin: auto 20px;
     }
 
-    
-.health__result {
-    text-align: center;
-    width: auto;
-    margin: auto 20px;
-    align-self: center;
-}
+    .health__result {
+        text-align: center;
+        width: auto;
+        margin: auto 20px;
+        align-self: center;
+    }
 }
 
 @media (max-width: 768px) {
@@ -455,7 +456,18 @@ input[type='radio']:checked:after {
 
     .health__result {
         width: auto;
-        margin: 40px 70px 0 70px;
+        margin: 40px 0 0 0;
+    }
+
+    .loan-section {
+        background-color: #FEDD9A;
+        height: auto;
+        margin-top: 0;
+        padding-top: 0;
+    }
+
+    .loan__result {
+        margin: auto 20px;
     }
 
     .loan__result-text {
